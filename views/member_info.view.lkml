@@ -9,6 +9,7 @@ view: member_info {
        WHERE
         {% condition filter_birthday %} TO_DATE("Birthday", "YYYY/MM/DD") {% endcondition %};;
    }
+
   filter: filter_birthday {
     type: date
   }
